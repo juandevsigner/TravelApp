@@ -33,7 +33,6 @@ export const RegisterPage = () => {
 
   const { status, errorMessage } = useSelector(state => state.auth);
   const isCheckingAuth = useMemo(() => status === "checking", [status]);
-  console.log(errorMessage);
 
   const [formSubmitted, setFormSubmitted] = useState(false);
 
